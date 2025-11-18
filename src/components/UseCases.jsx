@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 const cases = [
   { title: 'Commute', body: 'Lightweight comfort for daily travel.' },
@@ -12,14 +13,28 @@ export default function UseCases() {
     <section className="bg-white">
       <div className="mx-auto max-w-6xl px-6 py-16">
         <h2 className="text-2xl font-semibold tracking-tight text-slate-900">Use Cases</h2>
-        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <motion.div
+          className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.08 } } }}
+        >
           {cases.map((c) => (
-            <div key={c.title} className="rounded-2xl bg-white p-6 ring-1 ring-slate-200 shadow-[0_8px_30px_rgba(0,0,0,0.06)]">
+            <motion.div
+              key={c.title}
+              className="rounded-2xl bg-white p-6 ring-1 ring-slate-200 shadow-[0_8px_30px_rgba(0,0,0,0.06)]"
+              initial={{ opacity: 0, y: 8 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.45 }}
+              whileHover={{ y: -2 }}
+            >
               <h3 className="font-semibold text-slate-900">{c.title}</h3>
               <p className="mt-2 text-sm text-slate-600">{c.body}</p>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   )

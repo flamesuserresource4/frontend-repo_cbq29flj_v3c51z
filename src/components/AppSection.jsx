@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 export default function AppSection() {
   return (
@@ -14,7 +15,15 @@ export default function AppSection() {
               <li>Privacy-first design (TBD)</li>
             </ul>
           </div>
-          <div className="aspect-[4/3] rounded-2xl bg-white ring-1 ring-slate-200 shadow-[0_8px_30px_rgba(0,0,0,0.06)]" aria-hidden></div>
+          <motion.div
+            className="aspect-[4/3] rounded-2xl bg-white ring-1 ring-slate-200 shadow-[0_8px_30px_rgba(0,0,0,0.06)]"
+            aria-hidden
+            initial={{ opacity: 0, y: 8 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.5 }}
+            whileHover={{ y: -2 }}
+          />
         </div>
       </div>
     </section>
