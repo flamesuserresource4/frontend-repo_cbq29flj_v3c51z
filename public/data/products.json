@@ -1,0 +1,84 @@
+{
+  "products": [
+    {
+      "slug": "vitair",
+      "name": "VitAir",
+      "oneLiner": "Core wearable air system for daily vitality.",
+      "long": "VitAir is a compact, everyday wearable air device designed to support comfortable breathing in varied environments. It focuses on clean design, quiet operation, and seamless app control.",
+      "coreFunctions": ["Generate", "Purify", "Control", "Connect"],
+      "specs": {
+        "Oxygen": "Adaptive assist (TBD)",
+        "Filtration": "Multi-stage HEPA-grade (TBD)",
+        "Noise": "< 28 dBA (TBD)",
+        "Runtime": "Up to 12 hrs (TBD)",
+        "Sensors": "Env + motion + usage (TBD)",
+        "App": "iOS/Android, OTA updates",
+        "Hygiene": "Easy-clean modules (TBD)",
+        "Primary Use": "Daily wellness"
+      },
+      "modes": ["Auto", "Quiet", "Boost"],
+      "useCases": ["Commute", "Office", "Travel"],
+      "designEditions": ["Matte White", "Tech Blue Accent"]
+    },
+    {
+      "slug": "vitair-beauty-plus",
+      "name": "VitAir Beauty+",
+      "oneLiner": "Precision airflow for beauty and skincare routines.",
+      "long": "Beauty+ focuses on controlled, hygienic airflow for makeup, skincare, and grooming workflows. Optimized nozzles and profiles keep sessions consistent.",
+      "coreFunctions": ["Generate", "Purify", "Control", "Connect"],
+      "specs": {
+        "Oxygen": "Ambient assist (TBD)",
+        "Filtration": "Fine particulate (TBD)",
+        "Noise": "Salon-quiet (TBD)",
+        "Runtime": "Session-based (TBD)",
+        "Sensors": "Surface + proximity (TBD)",
+        "App": "Profiles, timers, routines",
+        "Hygiene": "Wipe-clean, replaceable tips (TBD)",
+        "Primary Use": "Beauty workflows"
+      },
+      "modes": ["Prep", "Set", "Detail"],
+      "useCases": ["Makeup", "Skincare", "Grooming"],
+      "designEditions": ["Studio White", "Pro Kit"]
+    },
+    {
+      "slug": "vitair-or",
+      "name": "VitAir OR",
+      "oneLiner": "Controlled air platform for operational rooms (non-medical, TBD).",
+      "long": "OR is oriented for controlled environments where precision airflow and hygiene are important. Specifications and claims are TBD and under development.",
+      "coreFunctions": ["Generate", "Purify", "Control", "Connect"],
+      "specs": {
+        "Oxygen": "TBD",
+        "Filtration": "High-efficiency (TBD)",
+        "Noise": "Low-noise architecture (TBD)",
+        "Runtime": "Extended duty (TBD)",
+        "Sensors": "Env + usage (TBD)",
+        "App": "Fleet + audit (TBD)",
+        "Hygiene": "Sanitary surfaces (TBD)",
+        "Primary Use": "Controlled spaces"
+      },
+      "modes": ["Standard", "Quiet", "Max"],
+      "useCases": ["Labs", "Studios", "Workshops"],
+      "designEditions": ["Industrial", "Cleanroom"]
+    },
+    {
+      "slug": "vitair-regen-cap",
+      "name": "VitAir ReGen Cap",
+      "oneLiner": "Focused airflow cap for recovery and rest (TBD).",
+      "long": "ReGen Cap is a conceptual wearable that delivers gentle, tunable airflow to support rest and recovery scenarios. Details are TBD and under development.",
+      "coreFunctions": ["Generate", "Purify", "Control", "Connect"],
+      "specs": {
+        "Oxygen": "TBD",
+        "Filtration": "Microfilter (TBD)",
+        "Noise": "Whisper-quiet (TBD)",
+        "Runtime": "Night-long (TBD)",
+        "Sensors": "Sleep + motion (TBD)",
+        "App": "Sleep profiles (TBD)",
+        "Hygiene": "Removable liners (TBD)",
+        "Primary Use": "Rest & recovery"
+      },
+      "modes": ["Rest", "Focus", "Recovery"],
+      "useCases": ["Rest", "Jetlag", "Meditation"],
+      "designEditions": ["Minimal", "Soft Touch"]
+    }
+  ]
+}
